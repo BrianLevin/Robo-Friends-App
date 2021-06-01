@@ -5,9 +5,11 @@ import reportWebVitals from './reportWebVitals';
 import Card from './Card';
 import 'tachyons';
 
+import {robots} from './robots';
+
 ReactDOM.render( 
     <div>
-    <Card />
+    <Card  />
     <Card />
     <Card />
     </div>
