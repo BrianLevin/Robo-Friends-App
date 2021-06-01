@@ -6,7 +6,7 @@ const Card = () => {
     return   (
         
         
-        <div>
+        <div className = "bg-light-green dib br3 pa3 na2 grow " >
 <img src= "https://robohash.org/test?200x200"  alt ="robots" />
 
 <div>
