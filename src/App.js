@@ -18,10 +18,14 @@ this.state = {
 
     }
 
-    onSearchChange(event) {
+    onSearchChange= (event) => {
+    
+this.setState({searchfield: event.target.value})
 
-console.log(event)
-
+const filteredRobots = this.state.robots.filter(robots => {
+    return robots.name.toLowerCase().includes(this.state.searchfield.toLowerCase)
+})
+console.log(filteredRobots);
 
     }
 
