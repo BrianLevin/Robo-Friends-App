@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
 import "./App.css";
+import Scroll from "./Scroll";
 
 
 
@@ -45,7 +46,9 @@ this.setState({searchfield: event.target.value})
             <div className = "tc">
     <h1 className= "f1"> RoboFriends</h1>
     <SearchBox  searchChange=  {this.onSearchChange}/>
+    <Scroll>
             <CardList robots = {filteredRobots} />
+            </Scroll>
     
             </div>
     
